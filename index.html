@@ -21,26 +21,6 @@
 Clerk Publishable key and Frontend API URL -->
 
 
-<script>
-  window.addEventListener('load', async function () {
-    await Clerk.load()
 
-    if (Clerk.user) {
-      
-
-      const userButtonDiv = document.getElementById('user-button')
-
-      Clerk.mountUserButton(userButtonDiv)
-    } else {
-      document.getElementById('app').innerHTML = `
-       <div id="sign-in"></div>
-      `
-
-      const signInDiv = document.getElementById('sign-in')
-
-      Clerk.mountSignIn(signInDiv)
-    }
-  })
-</script>
 </body>
 </html>
